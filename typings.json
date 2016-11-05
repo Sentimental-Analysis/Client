@@ -1,0 +1,33 @@
+{
+    "name": "sentiment-analysis-client",
+    "dependencies": {},
+    "globalDependencies": {
+        "axios": "registry:dt/axios#0.9.1+20160629101425",
+        "bluebird": "registry:dt/bluebird#3.0.0+20160907110115",
+        "chai": "registry:dt/chai#3.4.0+20160601211834",
+        "chai-enzyme": "registry:dt/chai-enzyme#0.5.0+20160705230117",
+        "cheerio": "registry:dt/cheerio#0.17.0+20160930124405",
+        "core-js": "registry:dt/core-js#0.0.0+20160914114559",
+        "enzyme": "registry:dt/enzyme#2.4.1+20161004164857",
+        "express": "registry:dt/express#4.0.0+20160708185218",
+        "express-serve-static-core": "registry:dt/express-serve-static-core#4.0.0+20161008174359",
+        "karma": "registry:dt/karma#0.13.9+20160811111312",
+        "log4js": "registry:dt/log4js#0.0.0+20160608042355",
+        "mime": "registry:dt/mime#0.0.0+20160316155526",
+        "mocha": "registry:dt/mocha#2.2.5+20160720003353",
+        "node": "registry:dt/node#6.0.0+20160923124626",
+        "react": "registry:dt/react#0.14.0+20160923124221",
+        "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+        "react-redux": "registry:dt/react-redux#4.4.0+20160908183346",
+        "react-router": "registry:dt/react-router#2.0.0+20160928130202",
+        "react-router-redux": "registry:dt/react-router-redux#4.0.0+20160930121107",
+        "react-router/history": "registry:dt/react-router/history#2.0.0+20160830150755",
+        "redux": "registry:dt/redux#3.5.2+20160703092728",
+        "redux-promise-middleware": "registry:dt/redux-promise-middleware#0.0.0+20160108032528",
+        "serve-static": "registry:dt/serve-static#0.0.0+20160606155157",
+        "sinon": "registry:dt/sinon#1.16.0+20160517064723",
+        "source-map": "registry:dt/source-map#0.0.0+20160317120654",
+        "uglify-js": "registry:dt/uglify-js#2.6.1+20160316155526",
+        "webpack": "registry:dt/webpack#1.12.9+20160927034556"
+    }
+}

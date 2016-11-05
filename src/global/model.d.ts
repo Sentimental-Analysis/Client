@@ -1,6 +1,6 @@
 
 export interface Result<T> {
-    readonly value: T;
+    readonly value: T | null;
     readonly isSuccess: boolean;
     readonly messages: string[] | null;
 }

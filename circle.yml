@@ -1,4 +1,4 @@
-chine:
+machine:
   node:
     version: 6.9
 dependencies:

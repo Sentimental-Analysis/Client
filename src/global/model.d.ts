@@ -16,5 +16,10 @@ export interface Tweet {
     sentiment: number;
 }
 
+export interface Tweets {
+    data: Tweet[];
+    dispatch: (action: any) => void
+}
+
 export interface AppState {
 }

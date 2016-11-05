@@ -9,8 +9,8 @@
         "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
     },
     "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Sentimental-Analysis/Client.git"
+        "url": "git+https://github.com/Sentimental-Analysis/Client.git",
+        "type": "git"
     },
     "author": "Dominik Kotecki",
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "homepage": "https://github.com/Sentimental-Analysis/Client#readme",
     "dependencies": {
-        "axios": "^0.14.0",
+        "axios": "^0.15.2",
         "bluebird": "^3.4.6",
         "chai": "^3.5.0",
         "core-js": "^2.4.1",

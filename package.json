@@ -57,5 +57,5 @@
         "webpack-dashboard": "0.1.8",
         "webpack-dev-middleware": "^1.8.4",
         "webpack-dev-server": "^1.16.1"
-    },
+    }
 }

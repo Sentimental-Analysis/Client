@@ -1,7 +1,7 @@
 import {expect} from "chai";
 import * as Math from "./math";
 
-describe("truth", () => {
+describe("trend test", () => {
     it("trend should be stable", () => {
         const trend = Math.rateTrend([{ sentiment: 2} as any, { sentiment: 2 } as any]);
         expect(trend.kind).to.eq("Stable");

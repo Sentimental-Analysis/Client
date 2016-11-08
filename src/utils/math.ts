@@ -34,13 +34,18 @@ function getAParameter(tweets: Tweet[]) {
 }
 
 export function rateTrend(tweets: Tweet[]): ITrend {
-    const trend = getAParameter(tweets);
-    if(trend === 0) {
-        return { kind: "Stable" };
-    } else if(trend > 0) {
-        return { kind: "Increasing" };
+    if(tweets.length > 0){
+        const trend = getAParameter(tweets);
+        if(trend === 0) {
+            return { kind: "Stable" };
+        } else if(trend > 0) {
+            return { kind: "Increasing" };
+        } else {
+            return { kind: "Decreasing" };
+        }
     } else {
-        return { kind: "Decreasing" };
+        return {kind: "Stable"};
     }
+
 }
 

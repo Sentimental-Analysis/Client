@@ -7,7 +7,7 @@ export interface ITrend {
 
 function arrayGenerator(from: number, to: number) {
     const emptyArray:number[] = [];
-    for (var index = from; index <= to; index++) {
+    for (let index = from; index <= to; index++) {
         emptyArray.push(index);
     }
     return emptyArray;

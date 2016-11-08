@@ -18,7 +18,6 @@ export interface Tweet {
 
 export interface Tweets {
     data: Tweet[];
-    dispatch: (action: any) => void
 }
 
 export interface AppState {

@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
         "dashboard": "webpack-dashboard -- webpack-dev-server --config ./webpack.config.js",
-        "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+        "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS",
+        "watch": "./node_modules/.bin/karma start"
     },
     "repository": {
         "url": "git+https://github.com/Sentimental-Analysis/Client.git",

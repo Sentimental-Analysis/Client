@@ -1,4 +1,4 @@
-import {combineReducers, createStore} from "redux";
+import {applyMiddleware, combineReducers, createStore} from "redux";
 import * as React from "react";
 import {render} from "react-dom";
 import {Provider} from "react-redux";
@@ -9,8 +9,8 @@ import {App} from "./app/app";
 import * as logger from "redux-logger"
 
 const combinedReducers = combineReducers(Object.assign({}, reducers, {routing: routerReducer}));
-
-const store = createStore(combinedReducers, {});
+const middleware = applyMiddleware(logger());
+const store = createStore(combinedReducers, {}, middleware);
 
 const history = syncHistoryWithStore(browserHistory, store);
 

@@ -38,7 +38,9 @@
         "redux-logger": "^2.7.4",
         "redux-promise-middleware": "^4.0.0",
         "sinon": "^1.17.5",
-        "typescript": "^2.0.7"
+        "typescript": "^2.0.7",
+        "webpack": "^1.13.3",
+        "webpack-dev-server": "^1.16.2"
     },
     "devDependencies": {
         "cheerio": "^0.22.0",

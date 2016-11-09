@@ -1,5 +1,5 @@
 import {searchBoxReducer} from "../searchbox/searchBoxReducer";
 
 export const reducers = {
-    searchBox: searchBoxReducer
+    tweets: searchBoxReducer
 };

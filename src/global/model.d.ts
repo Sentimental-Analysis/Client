@@ -22,5 +22,5 @@ export interface Tweets {
 }
 
 export interface AppState {
-    tweets: Tweets;
+    tweets: Tweet[];
 }

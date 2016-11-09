@@ -1,3 +1,5 @@
+import * as React from "react";
+
 export interface ITextInputProps {
     onSearch : (value: string) => void;
     text: string;
@@ -7,4 +9,10 @@ export interface ITextInputProps {
 
 export interface ITextInputState {
     text: string;
+}
+
+export class TextInput extends React.Component<ITextInputProps, ITextInputState>{
+    public render() {
+        return <h1></h1>;
+    }
 }

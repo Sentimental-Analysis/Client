@@ -7,10 +7,15 @@ import {syncHistoryWithStore, routerReducer} from 'react-router-redux'
 import {reducers} from "./global/reducers";
 import {App} from "./app/app";
 import * as logger from "redux-logger"
+import {AppState} from "./global/model";
+
+const appState: AppState = {
+  tweets: []
+};
 
 const combinedReducers = combineReducers(Object.assign({}, reducers, {routing: routerReducer}));
 const middleware = applyMiddleware(logger());
-const store = createStore(combinedReducers, {}, middleware);
+const store = createStore(combinedReducers, appState, middleware);
 
 const history = syncHistoryWithStore(browserHistory, store);
 

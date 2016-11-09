@@ -27,6 +27,7 @@
         "redux": "registry:dt/redux#3.5.2+20160703092728",
         "redux-logger": "registry:dt/redux-logger#2.6.0+20160619033847",
         "redux-promise-middleware": "registry:dt/redux-promise-middleware#0.0.0+20160108032528",
+        "redux-thunk": "registry:dt/redux-thunk#2.1.0+20160703120921",
         "serve-static": "registry:dt/serve-static#0.0.0+20160606155157",
         "sinon": "registry:dt/sinon#1.16.0+20160517064723",
         "source-map": "registry:dt/source-map#0.0.0+20160317120654",

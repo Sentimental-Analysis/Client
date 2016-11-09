@@ -6,6 +6,7 @@ import {Router, Route, browserHistory} from 'react-router'
 import {syncHistoryWithStore, routerReducer} from 'react-router-redux'
 import {reducers} from "./global/reducers";
 import {App} from "./app/app";
+import * as logger from "redux-logger"
 
 const combinedReducers = combineReducers(Object.assign({}, reducers, {routing: routerReducer}));
 

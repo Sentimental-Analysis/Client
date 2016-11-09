@@ -6,19 +6,26 @@ export interface Result<T> {
 }
 
 export interface Tweet {
-    id: number;
-    tweetIdentifier: string;
-    text: string;
-    key: string;
-    date: Date;
-    lang: string;
-    longitude: number;
-    latitude: number;
-    sentiment: number;
+    readonly id: number;
+    readonly tweetIdentifier: string;
+    readonly text: string;
+    readonly key: string;
+    readonly date: Date;
+    readonly lang: string;
+    readonly longitude: number;
+    readonly latitude: number;
+    readonly sentiment: number;
 }
 
 export interface Tweets {
-    data: Tweet[];
+    readonly data: Tweet[];
+}
+
+export interface Action<T> {
+    readonly type: string;
+    readonly payload: T;
+    error?: boolean;
+    meta?: any;
 }
 
 export interface AppState {

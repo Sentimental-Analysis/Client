@@ -6,7 +6,8 @@ export interface Result<T> {
 }
 
 export interface Tweet {
-    idStr: string;
+    id: number;
+    tweetIdentifier: string;
     text: string;
     key: string;
     date: Date;

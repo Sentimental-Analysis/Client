@@ -8,14 +8,16 @@ import {reducers} from "./global/reducers";
 import {App} from "./app/app";
 import * as logger from "redux-logger"
 import {AppState} from "./global/model";
+import thunk from "redux-thunk";
+import promise from "redux-promise-middleware";
 
-const appState: AppState = {
+const initialState: AppState = {
   tweets: []
 };
 
 const combinedReducers = combineReducers(Object.assign({}, reducers, {routing: routerReducer}));
-const middleware = applyMiddleware(logger());
-const store = createStore(combinedReducers, appState, middleware);
+const middleware = applyMiddleware(promise(), thunk, logger());
+const store = createStore(combinedReducers, initialState, middleware);
 
 const history = syncHistoryWithStore(browserHistory, store);
 

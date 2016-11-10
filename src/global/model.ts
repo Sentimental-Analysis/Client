@@ -22,4 +22,6 @@ export interface Tweets {
 
 export interface AppState {
     tweets: Tweet[];
+    isFetching: boolean;
+    error: string;
 }

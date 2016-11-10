@@ -12,7 +12,9 @@ import thunk from "redux-thunk";
 import promise from "redux-promise-middleware";
 
 const initialState: AppState = {
-  tweets: []
+    tweets: [],
+    isFetching: false,
+    error: ""
 };
 
 const combinedReducers = combineReducers(Object.assign({}, reducers, {routing: routerReducer}));

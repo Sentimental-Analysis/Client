@@ -1,4 +1,3 @@
-export const SEARCH = "SEARCH";
-export const SEARCH_PENDING = "SEARCH_PENDING";
-export const SEARCH_REJECTED = "SEARCH_REJECTED";
-export const SEARCH_FULFILLED = "SEARCH_FULFILLED"
+import {Result, Tweet} from "./model";
+
+export type Action = { type: "SEARCH", payload: any } | { type: "SEARCH_PENDING" } | { type: "SEARCH_REJECTED", payload?: any } | {type: "SEARCH_FULFILLED", payload: Result<Tweet[]>}

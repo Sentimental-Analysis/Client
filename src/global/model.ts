@@ -1,4 +1,3 @@
-
 export interface Result<T> {
     readonly value: T | null;
     readonly isSuccess: boolean;
@@ -19,13 +18,6 @@ export interface Tweet {
 
 export interface Tweets {
     readonly data: Tweet[];
-}
-
-export interface Action<T> {
-    readonly type: string;
-    readonly payload: T;
-    error?: boolean;
-    meta?: any;
 }
 
 export interface AppState {

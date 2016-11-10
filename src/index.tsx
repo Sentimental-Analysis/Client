@@ -13,7 +13,7 @@ import promise from "redux-promise-middleware";
 
 const initialState: AppState = {
     tweets: [],
-    isFetching: false,
+    isSearching: false,
     error: ""
 };
 

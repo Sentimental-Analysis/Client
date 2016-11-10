@@ -4,9 +4,9 @@ import {Tweet} from "./model";
 
 export type Reducer<TState> = (state: TState, action: Action) => TState;
 
-export type Reducers = { tweets: Reducer<Tweet[]>, isFetching: Reducer<boolean>, error: Reducer<string> };
+export type Reducers = { tweets: Reducer<Tweet[]>, isSearching: Reducer<boolean>, error: Reducer<string> };
 
-export function isFetching(state: boolean = false, action: Action) {
+export function isSearching(state: boolean = false, action: Action) {
     return action.type === "SEARCH_PENDING";
 }
 
@@ -19,6 +19,6 @@ export function error(state: string = "", action: Action) {
 
 export const reducers: Reducers = {
     tweets: searchBoxReducer,
-    isFetching: isFetching,
+    isSearching: isSearching,
     error: error
 };

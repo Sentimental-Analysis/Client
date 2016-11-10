@@ -29,8 +29,6 @@ store.subscribe(() => {
 
 render(
     <Provider store={store}>
-        <Router history={history}>
-            <Route path="/" component={App}></Route>
-        </Router>
+        <App label="Hello World"/>
     </Provider>,
     document.getElementById("container"));

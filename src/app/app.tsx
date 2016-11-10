@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch: Dispatch<Reducers>) => ({
     searchTweetByKey: (key: string) => dispatch(searchTweetByKey(key))
 });
 
-export class AppComponent extends React.Component<AppState & AppProps & IAppDispatchProps, any> {
+class AppComponent extends React.Component<AppState & AppProps & IAppDispatchProps, any> {
     constructor(props: AppState & AppProps & IAppDispatchProps) {
         super(props);
     }

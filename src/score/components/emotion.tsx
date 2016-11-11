@@ -18,6 +18,6 @@ function getEmotionText(value: number): string {
 
 export class Emotion extends React.Component<IEmotionProps, any> {
     public render() {
-        return <h1 className="" >{getEmotionText(this.props.value)}</h1>
+        return <h1>{getEmotionText(this.props.value)}</h1>
     }
 }

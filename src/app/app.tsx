@@ -1,4 +1,5 @@
 import { SearchBox } from '../searchbox/searchBoxContainer';
+import { Score } from "../score/scoreContainer";
 import * as React from 'react';
 import { AppState } from '../global/model';
 import { Action } from '../global/actionTypes';
@@ -33,6 +34,7 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     render() {
         return <div className="container" >
                 <SearchBox Search={this.props.searchTweetByKey} ></SearchBox>
+                <Score score={this.props.sentiment} ></Score>
             </div>;
     }
 }

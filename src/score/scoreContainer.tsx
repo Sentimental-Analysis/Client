@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Emotion } from "./components/emotion";
+import "./score.scss"
+
 export interface IScoreProps {
     readonly score: number;
 }

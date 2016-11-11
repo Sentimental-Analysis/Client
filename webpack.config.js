@@ -10,7 +10,7 @@ module.exports = {
         extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
     },
     module: {
-        loaders: [{ test: /\.tsx?$/, loader: "ts-loader" }, { test: /\.json$/, loader: "json" }],
+        loaders: [{ test: /\.tsx?$/, loader: "ts-loader" }, { test: /\.json$/, loader: "json" }, { test: /\.scss$/, loaders: ['style', 'css', 'sass'] }],
         preLoader: [{ test: /\.js$/, loader: "source-map-loader" }]
     },
     output: {

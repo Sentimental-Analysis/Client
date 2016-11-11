@@ -35,7 +35,7 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     render() {
         return <div className="container" >
                 <SearchBox Search={this.props.searchTweetByKey} ></SearchBox>
-                <Score score={this.props.sentiment} ></Score>
+                <Score score={this.props.sentiment} trend={this.props.trend} ></Score>
             </div>;
     }
 }

@@ -2,6 +2,7 @@ import { ITrend } from '../global/model';
 import { scoreReducer, trendReducer } from './scoreReducers';
 import { Action } from '../global/actionTypes';
 import { expect } from 'chai';
+
 describe("reducers", () => {
     describe("scoreReducer", () => {
         describe("action type any", () => {

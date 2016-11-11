@@ -41,4 +41,5 @@ export interface AppState {
     isSearching: boolean;
     error: string;
     sentiment: number;
+    trend: ITrend;
 }

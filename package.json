@@ -28,6 +28,7 @@
         "express": "^4.14.0",
         "immutable": "^3.8.1",
         "log4js": "^0.6.38",
+        "node-sass": "^3.11.2",
         "ramda": "^0.22.1",
         "react": "^15.3.2",
         "react-addons-test-utils": "^15.3.2",

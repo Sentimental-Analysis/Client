@@ -17,6 +17,7 @@ export class TextInput extends React.Component<ITextInputProps, ITextInputState>
     constructor(props: ITextInputProps) {
         super(props);
         this.state = { text: "" };
+        this.handleChange = this.handleChange.bind(this);
     }
 
     public handleSubmit(e: React.KeyboardEvent) {

@@ -13,7 +13,7 @@ function arrayGenerator(from: number, to: number) {
     return emptyArray;
 }
 
-function arrayArithmeticAverage(arr: any[]) {
+function arrayArithmeticAverage(arr: any[] = []) {
     const length = arr.length;
     const sum = arr.reduce((acc, x) => {
         return acc + x;
@@ -21,7 +21,7 @@ function arrayArithmeticAverage(arr: any[]) {
     return sum / length;
 }
 
-function getAParameter(tweets: Tweet[]) {
+function getAParameter(tweets: Tweet[] = []) {
     const t = arrayGenerator(0, tweets.length);
     const y = tweets.map((tweet: Tweet) => tweet.sentiment);
     const averageT = arrayArithmeticAverage(t);
@@ -33,7 +33,7 @@ function getAParameter(tweets: Tweet[]) {
     return numerator / denominator;
 }
 
-export function rateTrend(tweets: Tweet[]): ITrend {
+export function rateTrend(tweets: Tweet[] = []): ITrend {
     if(tweets.length > 0){
         const trend = getAParameter(tweets);
         if(trend === 0) {

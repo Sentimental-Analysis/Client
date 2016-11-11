@@ -1,5 +1,7 @@
 import * as axios from 'Axios';
 
+export type Nullable<T> = T | null;
+
 export interface Response<T> {
     data: T;
     status: number;
@@ -9,9 +11,9 @@ export interface Response<T> {
 }
 
 export interface Result<T> {
-    readonly value: T | null;
+    readonly value: Nullable<T>;
     readonly isSuccess: boolean;
-    readonly messages: string[] | null;
+    readonly messages: Nullable<string[]>;
 }
 
 export interface Tweet {

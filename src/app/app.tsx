@@ -20,7 +20,7 @@ const mapStateToProps = (state: AppState, appProps: AppProps): AppState => ({
     tweets: state.tweets,
     isSearching: state.isSearching,
     sentiment: state.sentiment,
-    trend: { kind: "Stable" }
+    trend: state.trend
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<Reducers>) => ({

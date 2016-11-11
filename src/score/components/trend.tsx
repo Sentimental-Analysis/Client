@@ -10,7 +10,7 @@ export class Trend extends React.Component<ITrend, any> {
     }
 
     public render() {
-        return <div>
+        return <div className="trend">
             <h1>Trend</h1>
             <p>{this.props.kind}</p>
         </div>;

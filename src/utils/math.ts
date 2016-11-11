@@ -1,9 +1,5 @@
-import {Tweet} from "../global/model";
-import * as Ramda from "ramda";
-
-export interface ITrend {
-    kind: "Decreasing" | "Increasing" | "Stable";
-}
+import { ITrend, Tweet } from '../global/model';
+import * as Ramda from 'ramda';
 
 function arrayGenerator(from: number, to: number) {
     const emptyArray:number[] = [];

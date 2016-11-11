@@ -17,7 +17,8 @@ export interface IAppDispatchProps {
 const mapStateToProps = (state: AppState, appProps: AppProps): AppState => ({
     error: state.error,
     tweets: state.tweets,
-    isSearching: state.isSearching
+    isSearching: state.isSearching,
+    sentiment: state.sentiment
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<Reducers>) => ({

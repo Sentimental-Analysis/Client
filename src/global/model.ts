@@ -32,8 +32,13 @@ export interface Tweets {
     readonly data: Tweet[];
 }
 
+export interface ITrend {
+    kind: "Decreasing" | "Increasing" | "Stable";
+}
+
 export interface AppState {
     tweets: Tweet[];
     isSearching: boolean;
     error: string;
+    sentiment: number;
 }

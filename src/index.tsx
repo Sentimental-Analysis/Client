@@ -12,7 +12,8 @@ import promise from "redux-promise-middleware";
 const initialState: AppState = {
     tweets: [],
     isSearching: false,
-    error: ""
+    error: "",
+    sentiment: 0.0
 };
 
 const combinedReducers = combineReducers(reducers);

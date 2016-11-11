@@ -1,3 +1,13 @@
+import * as axios from 'Axios';
+
+export interface Response<T> {
+    data: T;
+    status: number;
+    statusText: string;
+    headers: any;
+    config: axios.AxiosRequestConfig;
+}
+
 export interface Result<T> {
     readonly value: T | null;
     readonly isSuccess: boolean;

@@ -13,7 +13,8 @@ const initialState: AppState = {
     tweets: [],
     isSearching: false,
     error: "",
-    sentiment: 0.0
+    sentiment: 0.0,
+    trend: {kind: "Stable"}
 };
 
 const combinedReducers = combineReducers(reducers);

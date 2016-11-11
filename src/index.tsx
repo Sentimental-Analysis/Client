@@ -25,6 +25,6 @@ store.subscribe(() => {
 
 render(
     <Provider store={store}>
-        <App label="Hello World"/>
+        <App />
     </Provider>,
     document.getElementById("container"));

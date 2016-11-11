@@ -21,7 +21,7 @@ describe("<App />", () => {
         const store = createStore(combineReducers(reducers));
         const wrapper = renderElement(
             <Provider store={store}>
-                <App label='App' />
+                <App />
             </Provider>);
         const app = findComponentByType(wrapper, App);
         return app;
@@ -30,7 +30,7 @@ describe("<App />", () => {
 
     it('Start App', () => {
         const app = setup();
-        const h1 = TestUtils.findRenderedDOMComponentWithTag(app, 'h1');
-        expect(h1.textContent).to.eq("App");
+        const searchBox = TestUtils.findRenderedDOMComponentWithClass(app, "searchBox")
+        expect(searchBox).to.be.not.empty;
     })
 });

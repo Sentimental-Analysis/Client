@@ -1,17 +1,17 @@
-import * as React from "react";
-import {AppState} from "../global/model";
-import {Action} from "../global/actionTypes";
-import {Dispatch} from "redux";
-import {Reducers} from "../global/reducers";
-import {searchTweetByKey} from "../searchbox/searchBoxActions";
-import { connect } from "react-redux";
+import { SearchBox } from '../searchbox/searchBoxContainer';
+import * as React from 'react';
+import { AppState } from '../global/model';
+import { Action } from '../global/actionTypes';
+import { Dispatch } from 'redux';
+import { Reducers } from '../global/reducers';
+import { searchTweetByKey } from '../searchbox/searchBoxActions';
+import { connect } from 'react-redux';
 
 export interface AppProps {
-    label: string;
 }
 
 export interface IAppDispatchProps {
-    searchTweetByKey : (key: string) => Action;
+    searchTweetByKey: (key: string) => Action;
 }
 
 const mapStateToProps = (state: AppState, appProps: AppProps): AppState => ({
@@ -30,7 +30,9 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     }
 
     render() {
-        return <h1>{this.props.label}</h1>;
+        return <div className="container" >
+                <SearchBox Search={this.props.searchTweetByKey} ></SearchBox>
+            </div>;
     }
 }
 

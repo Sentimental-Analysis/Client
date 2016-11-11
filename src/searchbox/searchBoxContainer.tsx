@@ -1,4 +1,4 @@
-import {Action} from '../global/actionTypes';
+import { Action } from '../global/actionTypes';
 import * as React from "react";
 
 export interface ISearchBoxProps {
@@ -7,6 +7,6 @@ export interface ISearchBoxProps {
 
 export class SearchBox extends React.Component<ISearchBoxProps, any> {
     public render() {
-        return <h1>Elo</h1>;
+        return <div className="searchBox" ><h1>Elo</h1></div>;
     }
 }

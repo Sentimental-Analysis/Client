@@ -5,7 +5,7 @@ export interface ITextInputProps {
     onSearch: (value: string) => void;
     text: string;
     placeholder: string;
-    search: boolean;
+    isSearching: boolean;
 }
 
 export interface ITextInputState {
@@ -23,7 +23,7 @@ export class TextInput extends React.Component<ITextInputProps, ITextInputState>
         if (e.which === ENTER_KEY) {
             const text = (e.target as any).value as string;
             this.props.onSearch(text);
-            if (this.props.search) {
+            if (!this.props.isSearching) {
                 this.setState({ text: "" });
             }
         }
@@ -34,7 +34,7 @@ export class TextInput extends React.Component<ITextInputProps, ITextInputState>
     }
 
     public handleBlur = (e: React.SyntheticEvent) => {
-        if (!this.props.search) {
+        if (this.props.isSearching) {
             this.props.onSearch((e.target as any).value);
         }
     }

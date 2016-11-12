@@ -8,26 +8,21 @@
         "height": 100,
         "tabs": [
           {
-            "id": "161d347e-d2ff-4c49-ad20-9e1b6654a199",
-            "relativeUrl": "file://./src/app/app.tsx",
-            "additionalData": null
-          },
-          {
             "id": "a6bbefce-8886-4c76-a54f-84e20c3cee45",
             "relativeUrl": "file://./src/d3/lineChart.tsx",
             "additionalData": null
           },
           {
-            "id": "63774888-8cb7-47c4-89b7-4fed8acbcc23",
-            "relativeUrl": "file://./src/d3/path.tsx",
+            "id": "8d656424-db89-42e6-a4ef-57f8a08ce466",
+            "relativeUrl": "tested://./Tested",
             "additionalData": null
           }
         ],
         "subItems": [],
         "activeItemIndex": 0
       },
-      "lastUsed": 1478970237197,
-      "selectedTabId": "63774888-8cb7-47c4-89b7-4fed8acbcc23",
+      "lastUsed": 1478972385091,
+      "selectedTabId": "8d656424-db89-42e6-a4ef-57f8a08ce466",
       "errorsExpanded": false,
       "fileTreeExpanded": true
     }

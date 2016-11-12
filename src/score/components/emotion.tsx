@@ -18,7 +18,7 @@ function getEmotionText(value: number): string {
 
 export class Emotion extends React.Component<IEmotionProps, any> {
     public render() {
-        return <div>
+        return <div className="emotion" >
             <h1>Nastwienie</h1>
             <h2>{getEmotionText(this.props.value)}</h2>
         </div>;

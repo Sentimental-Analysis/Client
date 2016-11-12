@@ -13,10 +13,7 @@ export class Score extends React.Component<IScoreProps, any> {
     public render() {
         return <div className="score">
             <div className="details">
-                <Details trend={this.props.trend}></Details>
-            </div>
-            <div className="text">
-                <Emotion value={this.props.score}></Emotion>
+                <Details trend={this.props.trend} value={this.props.score} ></Details>
             </div>
         </div>
     }

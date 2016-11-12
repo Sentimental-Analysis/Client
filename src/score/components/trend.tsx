@@ -12,7 +12,7 @@ export class Trend extends React.Component<ITrend, any> {
     public render() {
         return <div className="trend">
             <h1>Trend</h1>
-            <p>{this.props.kind}</p>
+            <h2>{this.props.kind}</h2>
         </div>;
     }
 }

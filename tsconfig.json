@@ -2,6 +2,8 @@
     "compilerOptions": {
         "sourceMap": true,
         "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "strictNullChecks": false,
         "module": "commonjs",
         "target": "es5",
         "jsx": "react"

@@ -250,6 +250,7 @@ ModelManifest.xml
 /test_build
 config.json
 
+src/**/*.js
 paket-files
 logs/*
 !.gitkeep

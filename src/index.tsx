@@ -1,17 +1,25 @@
-import {combineReducers, createStore} from "redux";
+import {applyMiddleware, combineReducers, createStore} from "redux";
 import * as React from "react";
 import {render} from "react-dom";
 import {Provider} from "react-redux";
-import {Router, Route, browserHistory} from 'react-router'
-import {syncHistoryWithStore, routerReducer} from 'react-router-redux'
 import {reducers} from "./global/reducers";
 import {App} from "./app/app";
+import * as logger from "redux-logger"
+import {AppState} from "./global/model";
+import thunk from "redux-thunk";
+import promise from "redux-promise-middleware";
 
-const combinedReducers = combineReducers(Object.assign({}, reducers, {routing: routerReducer}));
+const initialState: AppState = {
+    tweets: [],
+    isSearching: false,
+    error: "",
+    sentiment: 0.0,
+    trend: {kind: "Stable"}
+};
 
-const store = createStore(combinedReducers, {});
-
-const history = syncHistoryWithStore(browserHistory, store);
+const combinedReducers = combineReducers(reducers);
+const middleware = applyMiddleware(promise(), thunk, logger());
+const store = createStore(combinedReducers, initialState, middleware);
 
 store.subscribe(() => {
     console.log("changed", store.getState());
@@ -19,8 +27,6 @@ store.subscribe(() => {
 
 render(
     <Provider store={store}>
-        <Router history={history}>
-            <Route path="/" component={App}></Route>
-        </Router>
+        <App />
     </Provider>,
     document.getElementById("container"));

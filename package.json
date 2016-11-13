@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
         "dashboard": "webpack-dashboard -- webpack-dev-server --config ./webpack.config.js",
-        "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+        "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS",
+        "watch": "./node_modules/.bin/karma start"
     },
     "repository": {
         "url": "git+https://github.com/Sentimental-Analysis/Client.git",
@@ -23,18 +24,31 @@
         "bluebird": "^3.4.6",
         "chai": "^3.5.0",
         "core-js": "^2.4.1",
+        "css-loader": "^0.25.0",
+        "d3": "^4.3.0",
         "express": "^4.14.0",
+        "immutable": "^3.8.1",
         "log4js": "^0.6.38",
+        "node-sass": "^3.11.2",
+        "ramda": "^0.22.1",
         "react": "^15.3.2",
+        "react-addons-test-utils": "^15.3.2",
+        "react-bootstrap": "^0.30.6",
         "react-dom": "^15.3.2",
         "react-history": "^0.15.1",
         "react-redux": "4.4.5",
         "react-router": "^2.8.1",
         "react-router-redux": "^4.0.6",
         "redux": "^3.6.0",
-        "redux-promise-middleware": "^4.0.0",
+        "redux-logger": "^2.7.4",
+        "redux-promise-middleware": "^4.1.0",
+        "redux-thunk": "^2.1.0",
+        "sass-loader": "^4.0.2",
         "sinon": "^1.17.5",
-        "typescript": "^2.0.7"
+        "style-loader": "^0.13.1",
+        "typescript": "^2.0.7",
+        "webpack": "^1.13.3",
+        "webpack-dev-server": "^1.16.2"
     },
     "devDependencies": {
         "cheerio": "^0.22.0",
@@ -54,9 +68,7 @@
         "ts-loader": "^0.8.2",
         "typescript": "2.0.7",
         "uglify-js": "^2.7.3",
-        "webpack": "^1.13.1",
         "webpack-dashboard": "0.1.8",
-        "webpack-dev-middleware": "^1.8.4",
-        "webpack-dev-server": "^1.16.1"
+        "webpack-dev-middleware": "^1.8.4"
     }
 }

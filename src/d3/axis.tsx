@@ -157,6 +157,6 @@ export class Axis extends React.Component<IAxisProps, any> {
                 {tickElements}
                 {pathElement}
                 {labelElement}
-            </g>
+            </g>);
     }
 }

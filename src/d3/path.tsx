@@ -1,6 +1,7 @@
 import * as React from "react";
 
 export interface IPathProps extends React.HTMLAttributes {
+    onMouseEnter?: any;
 }
 
 export class Path extends React.Component<IPathProps, any> {
@@ -27,7 +28,7 @@ export class Path extends React.Component<IPathProps, any> {
             strokeDasharray={strokeDasharray}
             fill={fill}
             d={d}
-            onMouseMove={evt => onMouseEnter(evt)}
+            onMouseMove={evt => onMouseEnter(evt, data)}
             onMouseLeave={evt => onMouseLeave(evt)}
             style={style}
             />

@@ -44,5 +44,4 @@ export interface AppState {
     score: Score;
     isSearching: boolean;
     error: string;
-    sentiment: number;
 }

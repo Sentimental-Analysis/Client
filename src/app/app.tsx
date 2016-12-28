@@ -1,5 +1,5 @@
 import { SearchBox } from '../searchbox/searchBoxContainer';
-import { Score } from "../score/scoreContainer";
+import { Score, ScoreComponent } from '../score/scoreContainer';
 import * as React from 'react';
 import { AppState } from '../global/model';
 import { Action } from '../global/actionTypes';
@@ -17,10 +17,9 @@ export interface IAppDispatchProps {
 
 const mapStateToProps = (state: AppState, appProps: AppProps): AppState => ({
     error: state.error,
-    tweets: state.tweets,
+    score: state.score,
     isSearching: state.isSearching,
     sentiment: state.sentiment,
-    trend: state.trend
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<Reducers>) => ({
@@ -35,7 +34,7 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     render() {
         return <div className="container" >
                 <SearchBox Search={this.props.searchTweetByKey} isSearching={this.props.isSearching} ></SearchBox>
-                <Score score={this.props.sentiment} trend={this.props.trend} ></Score>
+                <ScoreComponent score={this.props.sentiment}></ScoreComponent>
             </div>;
     }
 }

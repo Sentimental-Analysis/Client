@@ -15,31 +15,34 @@ export interface Result<T> {
     readonly isSuccess: boolean;
     readonly messages: Nullable<string[]>;
 }
+export const enum Sentiment {
+    Negative,
+    Neutral,
+    Positive,
+}
 
-export interface Tweet {
-    readonly id: number;
-    readonly tweetIdentifier: string;
-    readonly text: string;
-    readonly key: string;
-    readonly date: Date;
-    readonly lang: string;
-    readonly longitude: number;
+export interface Localization {
     readonly latitude: number;
-    readonly sentiment: number;
+    readonly longitude: number;
 }
 
-export interface Tweets {
-    readonly data: Tweet[];
+export interface KeyWord {
+    readonly key: string;
+    readonly quantity: number;
 }
 
-export interface ITrend {
-    kind: "Decreasing" | "Increasing" | "Stable";
+export interface Score {
+    readonly keyWords: KeyWord[];
+    readonly negativeTweetsQuantity: number;
+    readonly positiveTweetsQuantity: number;
+    readonly sentiment: Sentiment;
+    readonly localizations: Localization[];
+    readonly key: string;
 }
 
 export interface AppState {
-    tweets: Tweet[];
+    score: Score;
     isSearching: boolean;
     error: string;
     sentiment: number;
-    trend: ITrend;
 }

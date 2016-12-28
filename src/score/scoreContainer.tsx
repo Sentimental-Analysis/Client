@@ -9,7 +9,7 @@ export interface IScoreProps {
     readonly trend: ITrend;
 }
 
-export class Score extends React.Component<IScoreProps, any> {
+export class ScoreComponent extends React.Component<IScoreProps, any> {
     public render() {
         return <div className="score">
             <div className="details">

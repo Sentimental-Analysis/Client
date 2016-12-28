@@ -1,11 +1,10 @@
 import { Score } from './model';
 import { searchBoxReducer } from '../searchbox/searchBoxReducer';
 import { Action } from './actionTypes';
-import { scoreReducer, trendReducer } from '../score/scoreReducers';
 
 export type Reducer<TState> = (state: TState, action: Action) => TState;
 
-export type Reducers = { score: Reducer<Score>, isSearching: Reducer<boolean>, error: Reducer<string>, sentiment: Reducer<number>};
+export type Reducers = { score: Reducer<Score>, isSearching: Reducer<boolean>, error: Reducer<string>};
 
 export function isSearching(state: boolean = false, action: Action) {
     return action.type === "SEARCH_PENDING";
@@ -22,5 +21,4 @@ export const reducers: Reducers = {
     score: searchBoxReducer,
     isSearching: isSearching,
     error: error,
-    sentiment: scoreReducer,
 };

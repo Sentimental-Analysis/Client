@@ -1,3 +1,4 @@
+import { INITIAL_SCORE } from './global/constants';
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import * as React from "react";
 import {render} from "react-dom";
@@ -10,11 +11,9 @@ import thunk from "redux-thunk";
 import promise from "redux-promise-middleware";
 
 const initialState: AppState = {
-    tweets: [],
+    score: INITIAL_SCORE,
     isSearching: false,
     error: "",
-    sentiment: 0.0,
-    trend: {kind: "Stable"}
 };
 
 const combinedReducers = combineReducers(reducers);

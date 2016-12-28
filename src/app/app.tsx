@@ -1,5 +1,4 @@
 import { SearchBox } from '../searchbox/searchBoxContainer';
-import { ScoreComponent } from '../score/scoreContainer';
 import * as React from 'react';
 import { AppState } from '../global/model';
 import { Action } from '../global/actionTypes';

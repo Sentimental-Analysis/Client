@@ -1,5 +1,5 @@
-import { INITIAL_SCORE } from '../global/constants';
-import { Score } from '../global/model';
+import { INITIAL_SCORE } from "../global/constants";
+import { Score } from "../global/model";
 import {Action} from "../global/actionTypes";
 
 export function searchBoxReducer(state: Score = INITIAL_SCORE, action: Action): Score {

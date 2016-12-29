@@ -1,20 +1,20 @@
-import { INITIAL_SCORE } from './global/constants';
-import {applyMiddleware, combineReducers, createStore} from "redux";
+import { INITIAL_SCORE } from "./global/constants";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import * as React from "react";
-import {render} from "react-dom";
-import {Provider} from "react-redux";
-import {reducers} from "./global/reducers";
-import {App} from "./app/app";
-import * as logger from "redux-logger"
-import {AppState} from "./global/model";
+import { render } from "react-dom";
+import { Provider } from "react-redux";
+import { reducers } from "./global/reducers";
+import { App } from "./app/app";
+import * as logger from "redux-logger";
+import { AppState } from "./global/model";
 import thunk from "redux-thunk";
 import promise from "redux-promise-middleware";
 import * as tslib from "tslib";
 
 const initialState: AppState = {
-    score: INITIAL_SCORE,
-    isSearching: false,
     error: "",
+    isSearching: false,
+    score: INITIAL_SCORE,
 };
 
 const combinedReducers = combineReducers(reducers);

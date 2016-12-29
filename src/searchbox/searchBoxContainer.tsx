@@ -1,7 +1,7 @@
-import { SubmitButton } from './componnets/submitButton';
-import { TextInput } from './componnets/textInput';
-import { Action } from '../global/actionTypes';
-import * as React from 'react';
+import { SubmitButton } from "./componnets/submitButton";
+import { TextInput } from "./componnets/textInput";
+import { Action } from "../global/actionTypes";
+import * as React from "react";
 
 export interface ISearchBoxProps {
     Search: (value: string) => Action;
@@ -17,7 +17,7 @@ export class SearchBox extends React.Component<ISearchBoxProps, any> {
                             <span className="input-group-btn" >
                                 <SubmitButton value="Szukaj" isDisabled={this.props.isSearching} ></SubmitButton>
                             </span>
-                        </div>                       
+                        </div>
                     </div>
                </div>;
     }

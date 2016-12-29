@@ -7,6 +7,6 @@ export interface SubmitButtonProps {
 
 export class SubmitButton extends React.Component<SubmitButtonProps, any> {
     public render() {
-        return <input className="btn btn-default btn-lg" type="submit" value={this.props.value} disabled={this.props.isDisabled} />
+      return <input className="btn btn-default btn-lg" type="submit" value={this.props.value} disabled={this.props.isDisabled} />;
     }
 }

@@ -4,7 +4,6 @@ import { Action } from "../global/actionTypes";
 import { Score } from "../global/model";
 import { expect } from "chai";
 
-
 describe("searchBox reducer", () => {
     describe("action payload not equal SEARCH_FULFILLED", () => {
         it("should equal default state", () => {

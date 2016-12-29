@@ -12,12 +12,12 @@ export class KeyWordList extends React.Component<KeyWordListProps, any> {
   public render() {
         const tmp = List.of(...this.props.keywords).take(10);
         return <ul className="list-group" >
-            {tmp.map(keyword => {
-                return <li key={`${keyword.key}-${keyword.quantity}`} className="list-group-item" >
-                    {keyword.key}
-                    <span className="badge" >{keyword.quantity}</span>
-                </li>
-            }).toArray()}
-        </ul>
+          {tmp.map((keyword: KeyWord) => {
+            return <li key={`${keyword.key}-${keyword.quantity}`} className="list-group-item" >
+              {keyword.key}
+              <span className="badge" >{keyword.quantity}</span>
+            </li>;
+          }).toArray()}
+        </ul>;
     }
-}
+};

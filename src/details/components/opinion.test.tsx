@@ -4,7 +4,6 @@ import * as enzyme from "enzyme";
 import * as React from "react";
 import Opinion from "./opinion";
 
-
 describe("<Opinion>", () => {
   describe("Nagative", () => {
     it("Sholud be rendered", () => {

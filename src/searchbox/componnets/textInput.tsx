@@ -19,7 +19,7 @@ export class TextInput extends React.Component<ITextInputProps, ITextInputState>
         this.state = { text: "" };
     }
 
-    public handleSubmit =(e: React.KeyboardEvent) => {
+    public handleSubmit = (e: React.KeyboardEvent) => {
         if (e.which === ENTER_KEY) {
             const text = (e.target as any).value as string;
             this.props.onSearch(text);
@@ -30,7 +30,7 @@ export class TextInput extends React.Component<ITextInputProps, ITextInputState>
     }
 
     public handleChange = (e: React.SyntheticEvent) => {
-        this.setState({ text: (e.target as any).value })
+      this.setState({ text: (e.target as any).value });
     }
 
     public handleBlur = (e: React.SyntheticEvent) => {

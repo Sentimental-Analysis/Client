@@ -15,13 +15,13 @@ export interface IAppDispatchProps {
 }
 
 const mapStateToProps = (state: AppState, appProps: AppProps): AppState => ({
-    error: state.error,
-    score: state.score,
+  error: state.error,
     isSearching: state.isSearching,
+    score: state.score,
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<Reducers>) => ({
-    searchTweetByKey: (key: string) => dispatch(searchTweetByKey(key))
+    searchTweetByKey: (key: string) => dispatch(searchTweetByKey(key)),
 });
 
 class AppComponent extends React.Component<AppState & AppProps & IAppDispatchProps, any> {

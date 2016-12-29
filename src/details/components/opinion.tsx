@@ -25,7 +25,6 @@ function rateSentiment(sentiment: Sentiment): "Neutralny" | "Pozytywny" | "Negat
 class Opinion extends React.Component<IOpinionProps, IOpinionState> {
   public render(): JSX.Element {
     return (<div className="score">
-      <div className="details">
         <div className="row text">
           <div className="col-md-4 well nopadding scoreBox">
             <h1>Ilość pozytywnych opini</h1>
@@ -39,8 +38,7 @@ class Opinion extends React.Component<IOpinionProps, IOpinionState> {
             <h1 id="negative-quantity" >{this.props.negativeOpinionQuantity}</h1>
           </div>
         </div>
-      </div>
-    </div>);
+      </div>);
   }
 }
 

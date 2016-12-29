@@ -2,6 +2,8 @@ import { KeyWordList } from "./components/keywordList";
 import * as React from "react";
 import { Score } from "../global/model";
 import Opinion from "./components/opinion";
+import "./details.scss";
+
 interface IDetailsProps {
   score: Score;
 }

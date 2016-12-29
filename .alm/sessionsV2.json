@@ -26,13 +26,33 @@
             "id": "bc4f28e9-449f-4cc2-9ec4-144b5bd8a2fa",
             "relativeUrl": "file://./src/details/components/keywordList.tsx",
             "additionalData": null
+          },
+          {
+            "id": "c1e10985-5dbb-4733-97ad-3090c1605a07",
+            "relativeUrl": "file://./typings.json",
+            "additionalData": null
+          },
+          {
+            "id": "c457afe3-f963-4601-9058-ebd22532eb54",
+            "relativeUrl": "file://./alm.json",
+            "additionalData": null
+          },
+          {
+            "id": "cb2a04fc-6f5b-47ee-8fba-c6327bf7e785",
+            "relativeUrl": "tested://./Tested",
+            "additionalData": null
+          },
+          {
+            "id": "512bf9a5-c7fc-47e5-8f3f-2cf32790c221",
+            "relativeUrl": "file://./src/app/app.test.tsx",
+            "additionalData": null
           }
         ],
         "subItems": [],
         "activeItemIndex": 0
       },
-      "lastUsed": 1483039629303,
-      "selectedTabId": "bc4f28e9-449f-4cc2-9ec4-144b5bd8a2fa",
+      "lastUsed": 1483039871742,
+      "selectedTabId": "512bf9a5-c7fc-47e5-8f3f-2cf32790c221",
       "errorsExpanded": false,
       "fileTreeExpanded": true
     }

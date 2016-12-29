@@ -9,6 +9,7 @@ import * as logger from "redux-logger"
 import {AppState} from "./global/model";
 import thunk from "redux-thunk";
 import promise from "redux-promise-middleware";
+import * as tslib from "tslib";
 
 const initialState: AppState = {
     score: INITIAL_SCORE,

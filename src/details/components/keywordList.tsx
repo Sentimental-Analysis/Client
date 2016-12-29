@@ -1,5 +1,3 @@
-import { link } from "fs";
-import { render } from "enzyme";
 import { KeyWord } from "../../global/model";
 import * as React from "react";
 import { List } from "immutable";

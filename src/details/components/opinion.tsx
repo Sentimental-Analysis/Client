@@ -5,9 +5,10 @@ interface IOpinionProps {
   negativeOpinionQuantity: number;
   positiveOpinionQuantity: number;
   sentiment: Sentiment;
-};
+}
 
-interface IOpinionState { };
+interface IOpinionState {
+}
 
 function rateSentiment(sentiment: Sentiment): "Neutralny" | "Pozytywny" | "Negatywny" {
     switch (sentiment) {

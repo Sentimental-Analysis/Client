@@ -1,4 +1,4 @@
-import { Sentiment } from '../../global/model';
+import { Sentiment } from "../../global/model";
 import * as React from "react";
 
 interface IOpinionProps {
@@ -10,7 +10,7 @@ interface IOpinionProps {
 interface IOpinionState { };
 
 function rateSentiment(sentiment: Sentiment): "Neutralny" | "Pozytywny" | "Negatywny" {
-    switch(sentiment){
+    switch (sentiment) {
         case Sentiment.Neutral:
             return "Neutralny";
         case Sentiment.Negative:
@@ -40,7 +40,7 @@ class Opinion extends React.Component<IOpinionProps, IOpinionState> {
           </div>
         </div>
       </div>
-    </div>)
+    </div>);
   }
 }
 

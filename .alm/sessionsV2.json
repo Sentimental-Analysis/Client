@@ -18,11 +18,6 @@
             "additionalData": null
           },
           {
-            "id": "f5fcfdfc-8168-40cd-9a56-967ace3c3719",
-            "relativeUrl": "file://./src/details/components/opinion.tsx",
-            "additionalData": null
-          },
-          {
             "id": "52add005-376b-4ca6-b707-c0eaf04eafbe",
             "relativeUrl": "file://./src/details/components/opinion.js",
             "additionalData": null
@@ -31,13 +26,23 @@
             "id": "ea7630f3-1d5e-4c51-aa77-da6e5a86253a",
             "relativeUrl": "file://./src/details/components/opinion.test.tsx",
             "additionalData": null
+          },
+          {
+            "id": "970ca357-0e29-4df5-9614-431a771aa6e3",
+            "relativeUrl": "file://./webpack.config.js",
+            "additionalData": null
+          },
+          {
+            "id": "ee534973-a0a2-4ea9-9220-b0689c8cd8dd",
+            "relativeUrl": "file://./src/details/components/opinion.tsx",
+            "additionalData": null
           }
         ],
         "subItems": [],
         "activeItemIndex": 0
       },
-      "lastUsed": 1483041091754,
-      "selectedTabId": "ea7630f3-1d5e-4c51-aa77-da6e5a86253a",
+      "lastUsed": 1483041325781,
+      "selectedTabId": "ee534973-a0a2-4ea9-9220-b0689c8cd8dd",
       "errorsExpanded": false,
       "fileTreeExpanded": true,
       "fileTreeWidth": 165

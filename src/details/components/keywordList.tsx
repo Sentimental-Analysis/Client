@@ -1,15 +1,15 @@
-import { link } from 'fs';
-import { render } from 'enzyme';
-import { KeyWord } from '../../global/model';
+import { link } from "fs";
+import { render } from "enzyme";
+import { KeyWord } from "../../global/model";
 import * as React from "react";
 import { List } from "immutable";
 
 export interface KeyWordListProps {
-    keywords: KeyWord[]
+  keywords: KeyWord[];
 }
 
 export class KeyWordList extends React.Component<KeyWordListProps, any> {
-    render() {
+  public render() {
         const tmp = List.of(...this.props.keywords).take(10);
         return <ul className="list-group" >
             {tmp.map(keyword => {

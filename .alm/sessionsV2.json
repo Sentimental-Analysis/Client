@@ -36,13 +36,18 @@
             "id": "ee534973-a0a2-4ea9-9220-b0689c8cd8dd",
             "relativeUrl": "file://./src/details/components/opinion.tsx",
             "additionalData": null
+          },
+          {
+            "id": "c35698e1-32c4-4280-919d-bcc06f9e4237",
+            "relativeUrl": "file://./package.json",
+            "additionalData": null
           }
         ],
         "subItems": [],
         "activeItemIndex": 0
       },
-      "lastUsed": 1483041325781,
-      "selectedTabId": "ee534973-a0a2-4ea9-9220-b0689c8cd8dd",
+      "lastUsed": 1483041346348,
+      "selectedTabId": "c35698e1-32c4-4280-919d-bcc06f9e4237",
       "errorsExpanded": false,
       "fileTreeExpanded": true,
       "fileTreeWidth": 165

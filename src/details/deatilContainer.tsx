@@ -3,6 +3,7 @@ import * as React from "react";
 import {Score, SentimentWord} from "../global/model";
 import Opinion from "./components/opinion";
 import "./details.scss";
+import QueryKey from "./components/queryKey";
 
 interface IDetailsProps {
   score: Score;
@@ -13,7 +14,7 @@ class Details extends React.Component<IDetailsProps, any> {
   public render() {
     return (<div className="details">
       <div>
-        <h1 className="text">{this.props.score.key.toUpperCase()}</h1>
+        <QueryKey query={this.props.score.key} />
       </div>
       <div>
         <Opinion negativeOpinionQuantity={this.props.score.negativeTweetsQuantity} positiveOpinionQuantity={this.props.score.positiveTweetsQuantity} sentiment={this.props.sentiment}/>

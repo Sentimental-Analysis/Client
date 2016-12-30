@@ -41,7 +41,7 @@ export interface Score {
 }
 
 export interface AppState {
-    score: Score;
-    isSearching: boolean;
-    error: string;
+    readonly score: Score;
+    readonly isSearching: boolean;
+    readonly error: string;
 }

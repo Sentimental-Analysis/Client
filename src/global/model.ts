@@ -3,11 +3,11 @@ import * as axios from "Axios";
 export type Nullable<T> = T | null;
 
 export interface Response<T> {
-    data: T;
-    status: number;
-    statusText: string;
-    headers: any;
-    config: axios.AxiosRequestConfig;
+    readonly data: T;
+    readonly status: number;
+    readonly statusText: string;
+    readonly headers: any;
+    readonly config: axios.AxiosRequestConfig;
 }
 
 export interface Result<T> {

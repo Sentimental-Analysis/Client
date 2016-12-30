@@ -1,6 +1,7 @@
 import * as axios from "Axios";
 
 export type Nullable<T> = T | null;
+export type SentimentWord = "Neutralny" | "Pozytywny" | "Negatywny";
 
 export interface Response<T> {
     readonly data: T;
@@ -41,6 +42,7 @@ export interface Score {
 }
 
 export interface AppState {
+    readonly sentiment: SentimentWord;
     readonly score: Score;
     readonly isSearching: boolean;
     readonly error: string;

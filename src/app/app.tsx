@@ -1,11 +1,11 @@
-import { SearchBox } from "../searchbox/searchBoxContainer";
+import {SearchBox} from "../searchbox/searchBoxContainer";
 import * as React from "react";
-import { AppState } from "../global/model";
-import { Action } from "../global/actionTypes";
-import { Dispatch } from "redux";
-import { Reducers } from "../global/reducers";
-import { searchTweetByKey } from "../searchbox/searchBoxActions";
-import { connect } from "react-redux";
+import {AppState} from "../global/model";
+import {Action} from "../global/actionTypes";
+import {Dispatch} from "redux";
+import {Reducers} from "../global/reducers";
+import {searchTweetByKey} from "../searchbox/searchBoxActions";
+import {connect} from "react-redux";
 import Details from "../details/deatilContainer";
 
 export interface AppProps {
@@ -16,9 +16,10 @@ export interface IAppDispatchProps {
 }
 
 const mapStateToProps = (state: AppState, appProps: AppProps): AppState => ({
-  error: state.error,
+    error: state.error,
     isSearching: state.isSearching,
     score: state.score,
+    sentiment: "Neutralny",
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<Reducers>) => ({
@@ -31,10 +32,10 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     }
 
     public render() {
-        return <div className="container" >
-                <SearchBox Search={this.props.searchTweetByKey} isSearching={this.props.isSearching} />
-                <Details score={this.props.score} />
-            </div>;
+        return <div className="container">
+            <SearchBox Search={this.props.searchTweetByKey} isSearching={this.props.isSearching}/>
+            <Details score={this.props.score}/>
+        </div>;
     }
 }
 

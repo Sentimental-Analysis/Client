@@ -1,4 +1,4 @@
-import {SearchBox} from "../searchbox/searchBoxContainer";
+import SearchBox from "../searchbox/searchBoxContainer";
 import * as React from "react";
 import {AppState} from "../global/model";
 import {Action} from "../global/actionTypes";
@@ -35,7 +35,7 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     public render() {
         const dataComponent = this.props.score.key !== "" ? <Details score={this.props.score} sentiment={this.props.sentiment}/> : <Empty/>;
         return <div className="container">
-            <SearchBox Search={this.props.searchTweetByKey} isSearching={this.props.isSearching}/>
+            <SearchBox onSearch={this.props.searchTweetByKey} isSearching={this.props.isSearching}/>
             {dataComponent}
         </div>;
     }

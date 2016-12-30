@@ -7,6 +7,7 @@ import {Reducers} from "../global/reducers";
 import {searchTweetByKey} from "../searchbox/searchBoxActions";
 import {connect} from "react-redux";
 import Details from "../details/deatilContainer";
+import Empty from "../empty/empty";
 
 export interface AppProps {
 }
@@ -32,9 +33,10 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     }
 
     public render() {
+        const dataComponent = this.props.score.key !== "" ? <Details score={this.props.score} sentiment={this.props.sentiment}/> : <Empty/>;
         return <div className="container">
             <SearchBox Search={this.props.searchTweetByKey} isSearching={this.props.isSearching}/>
-            <Details score={this.props.score} sentiment={this.props.sentiment}/>
+            {dataComponent}
         </div>;
     }
 }

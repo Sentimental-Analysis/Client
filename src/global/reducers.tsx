@@ -1,11 +1,11 @@
-import { searchBoxReducer } from '../searchbox/searchBoxReducer';
-import { Action } from './actionTypes';
-import { ITrend, Tweet } from './model';
-import { scoreReducer, trendReducer } from '../score/scoreReducers';
+import {Score, SentimentWord} from "./model";
+import { searchBoxReducer } from "../searchbox/searchBoxReducer";
+import { Action } from "./actionTypes";
+import {sentimentReducer} from "../details/detailReducers";
 
 export type Reducer<TState> = (state: TState, action: Action) => TState;
 
-export type Reducers = { tweets: Reducer<Tweet[]>, isSearching: Reducer<boolean>, error: Reducer<string>, sentiment: Reducer<number>, trend: Reducer<ITrend> };
+export type Reducers = { sentiment: Reducer<SentimentWord>, score: Reducer<Score>, isSearching: Reducer<boolean>, error: Reducer<string> };
 
 export function isSearching(state: boolean = false, action: Action) {
     return action.type === "SEARCH_PENDING";
@@ -19,9 +19,8 @@ export function error(state: string = "", action: Action) {
 }
 
 export const reducers: Reducers = {
-    tweets: searchBoxReducer,
-    isSearching: isSearching,
-    error: error,
-    sentiment: scoreReducer,
-    trend: trendReducer
+    error,
+    isSearching,
+    score: searchBoxReducer,
+    sentiment: sentimentReducer,
 };

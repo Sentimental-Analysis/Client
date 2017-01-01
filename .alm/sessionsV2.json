@@ -1,31 +1,39 @@
 {
   "sessions": [
     {
-      "id": "2ab25180-0f96-4bc5-b99f-58cbba894a36",
+      "id": "3a5fcf4c-df42-46a1-a04c-c02be46921e2",
       "tabLayout": {
         "type": "stack",
         "width": 100,
         "height": 100,
         "tabs": [
           {
-            "id": "a6bbefce-8886-4c76-a54f-84e20c3cee45",
-            "relativeUrl": "file://./src/d3/lineChart.tsx",
+            "id": "a81482da-73a9-4f31-9651-8079fa108b61",
+            "relativeUrl": "file://./src/details/components/keywordList.tsx",
             "additionalData": null
           },
           {
-            "id": "8d656424-db89-42e6-a4ef-57f8a08ce466",
-            "relativeUrl": "tested://./Tested",
+            "id": "052133d2-6b4b-42cd-8a54-ee8ba4f17fe2",
+            "relativeUrl": "file://./src/details/components/opinion.tsx",
+            "additionalData": null
+          },
+          {
+            "id": "1d00a0f9-31f7-4a97-a1be-369f8f72b452",
+            "relativeUrl": "file://./src/details/deatilContainer.tsx",
             "additionalData": null
           }
         ],
         "subItems": [],
         "activeItemIndex": 0
       },
-      "lastUsed": 1478972385091,
-      "selectedTabId": "8d656424-db89-42e6-a4ef-57f8a08ce466",
+      "lastUsed": 1483043267064,
+      "selectedTabId": "1d00a0f9-31f7-4a97-a1be-369f8f72b452",
       "errorsExpanded": false,
-      "fileTreeExpanded": true
+      "fileTreeExpanded": true,
+      "fileTreeWidth": 165,
+      "errorsDisplayMode": 1,
+      "showSemanticView": false
     }
   ],
-  "relativePathToTsconfig": "./tsconfig.json"
+  "relativePathToTsconfig": "./node_modules/ts-loader/tsconfig.json"
 }

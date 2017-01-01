@@ -1,8 +1,5 @@
 {
     "name": "sentiment-analysis-client",
-    "dependencies": {
-        "ramda": "registry:dt/ramda#0.0.0+20160824142652"
-    },
     "globalDependencies": {
         "axios": "registry:dt/axios#0.9.1+20161016142654",
         "bluebird": "registry:dt/bluebird#3.0.0+20160928162057",
@@ -10,7 +7,6 @@
         "chai-enzyme": "registry:dt/chai-enzyme#0.5.0+20160705230117",
         "cheerio": "registry:dt/cheerio#0.17.0+20160930124405",
         "core-js": "registry:dt/core-js#0.0.0+20160914114559",
-        "d3": "registry:dt/d3#0.0.0+20160907005744",
         "enzyme": "registry:dt/enzyme#2.4.1+20161004164857",
         "express": "registry:dt/express#4.0.0+20160708185218",
         "express-serve-static-core": "registry:dt/express-serve-static-core#4.0.0+20161008174359",

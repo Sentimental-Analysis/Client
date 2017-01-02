@@ -21,6 +21,7 @@ class Opinion extends React.Component<IOpinionProps, IOpinionState> {
           </div>
           <div className="col-md-4 well nopadding scoreBox">
             <h1 id="sentiment-result">{this.props.sentiment}</h1>
+            <h1 id="trend">{this.props.trend}</h1>
           </div>
           <div className="col-md-4 well nopadding scoreBox">
             <h1>Ilość negatywnych opini</h1>

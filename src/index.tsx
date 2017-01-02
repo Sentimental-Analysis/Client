@@ -16,6 +16,7 @@ const initialState: AppState = {
     isSearching: false,
     score: INITIAL_SCORE,
     sentiment: "Neutralny",
+    trend: "Stabilny",
 };
 
 const combinedReducers = combineReducers(reducers);

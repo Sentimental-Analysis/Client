@@ -5,6 +5,7 @@ interface IOpinionProps {
   negativeOpinionQuantity: number;
   positiveOpinionQuantity: number;
   sentiment: SentimentWord;
+  trend: string;
 }
 
 interface IOpinionState {

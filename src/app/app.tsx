@@ -20,7 +20,8 @@ const mapStateToProps = (state: AppState, appProps: AppProps): AppState => ({
     error: state.error,
     isSearching: state.isSearching,
     score: state.score,
-    sentiment: "Neutralny",
+    sentiment: state.sentiment,
+    trend: state.trend,
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<Reducers>) => ({
@@ -33,7 +34,7 @@ class AppComponent extends React.Component<AppState & AppProps & IAppDispatchPro
     }
 
     public render() {
-        const dataComponent = this.props.score.key !== "" ? <Details score={this.props.score} sentiment={this.props.sentiment}/> : <Empty/>;
+        const dataComponent = this.props.score.key !== "" ? <Details score={this.props.score} sentiment={this.props.sentiment} trend={this.props.trend} /> : <Empty/>;
         return <div className="container">
             <SearchBox onSearch={this.props.searchTweetByKey} isSearching={this.props.isSearching}/>
             {dataComponent}

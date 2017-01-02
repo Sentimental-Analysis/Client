@@ -2,6 +2,7 @@ import * as axios from "Axios";
 
 export type Nullable<T> = T | null;
 export type SentimentWord = "Neutralny" | "Pozytywny" | "Negatywny";
+export type TrendWord = "Stabilny" | "Rosnący" | "Malejący";
 
 export interface Response<T> {
     readonly data: T;
@@ -53,4 +54,5 @@ export interface AppState {
     readonly score: Score;
     readonly isSearching: boolean;
     readonly error: string;
+    readonly trend: TrendWord;
 }

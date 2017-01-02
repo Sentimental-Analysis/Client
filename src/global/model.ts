@@ -22,6 +22,12 @@ export const enum Sentiment {
     Positive,
 }
 
+export const enum Trend {
+    Increasing,
+    Decreasing,
+    Stable,
+}
+
 export interface Localization {
     readonly latitude: number;
     readonly longitude: number;
@@ -39,6 +45,7 @@ export interface Score {
     readonly sentiment: Sentiment;
     readonly localizations: Localization[];
     readonly key: string;
+    readonly trend: Trend;
 }
 
 export interface AppState {
